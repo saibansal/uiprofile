@@ -1,6 +1,7 @@
+'use client';
 import { useState } from 'react';
 
-export default function Contact() {
+export default function Contact({ contact }) {
   const [status, setStatus] = useState('idle'); // idle, sending, success
 
   const handleSubmit = (e) => {
@@ -28,21 +29,21 @@ export default function Contact() {
                             <i className="fas fa-envelope"></i>
                             <div>
                                 <h4>Email</h4>
-                                <p>saibansal87@gmail.com</p>
+                                <p>{contact.email}</p>
                             </div>
                         </div>
                         <div className="contact-item">
                             <i className="fas fa-phone-alt"></i>
                             <div>
                                 <h4>Phone</h4>
-                                <p>9781045376</p>
+                                <p>{contact.phone}</p>
                             </div>
                         </div>
                         <div className="contact-item">
                             <i className="fas fa-map-marker-alt"></i>
                             <div>
                                 <h4>Location</h4>
-                                <p>Sirhind, Punjab (Remote/Relocate)</p>
+                                <p>{contact.location}</p>
                             </div>
                         </div>
                     </div>

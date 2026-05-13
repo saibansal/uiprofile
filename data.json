@@ -1,0 +1,164 @@
+{
+  "settings": {
+    "logoName": "Vishal."
+  },
+  "hero": {
+    "subtitle": "Hello, I am Vishal Bansal adsasd sdafasdf a",
+    "titlePrefix": "Senior UI/UX",
+    "titleSuffix": "+ WordPress Developer",
+    "description": "Senior UI/UX Developer with 8+ years of experience creating user-focused digital solutions. Adept at building intuitive interfaces using React JS, Ionic, and WordPress.",
+    "yearsExperience": "8+",
+    "socials": {
+      "linkedin": "https://www.linkedin.com",
+      "github": "https://github.com",
+      "globe": "#",
+      "twitter": "",
+      "instagram": "",
+      "dribbble": "",
+      "behance": ""
+    }
+  },
+  "expertise": [
+    {
+      "id": 1,
+      "icon": "fas fa-layer-group",
+      "title": "UI/UX Design",
+      "description": "Creating intuitive interfaces and improving user journeys through wireframing, prototyping, user research, and usability testing.",
+      "skills": [
+        "Wireframing & Prototyping",
+        "User-Centered Design",
+        "Usability Testing"
+      ]
+    },
+    {
+      "id": 2,
+      "icon": "fas fa-code",
+      "title": "Front-End Development",
+      "description": "Writing clean, semantic, and highly performant HTML5, CSS3, and JavaScript. Specializing in modern frameworks like React JS and Ionic 4.",
+      "skills": [
+        "React JS & Ionic",
+        "Responsive Web Design",
+        "Accessibility Standards"
+      ]
+    },
+    {
+      "id": 3,
+      "icon": "fab fa-wordpress-simple",
+      "title": "WordPress Solutions",
+      "description": "Building scalable, manageable, and secure CMS. Experienced in custom theme development, SEO best practices, and Ecommerce integration.",
+      "skills": [
+        "Custom Theme Dev",
+        "CMS Management",
+        "Performance Optimization"
+      ]
+    }
+  ],
+  "experience": {
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Senior UI/UX Developer",
+        "date": "2021 - Present",
+        "company": "Vismaad Media Tech Pvt Ltd. | Mohali",
+        "bullets": [
+          "Designed and implemented user-centered interfaces for web applications, improving usability and engagement.",
+          "Collaborated with product managers and developers to deliver responsive designs aligned with business goals.",
+          "Conducted usability testing and incorporated feedback to refine user experience.",
+          "Optimized front-end performance using HTML5, CSS3, and JavaScript."
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Sr UI Developer",
+        "date": "Mar 2020 - Mar 2021",
+        "company": "Invoxico Technologies | Mohali",
+        "bullets": [
+          "Developed and customized WordPress themes and plugins to meet client specifications.",
+          "Managed CMS content updates and ensured cross-browser compatibility and mobile responsiveness.",
+          "Collaborated with designers to translate UI/UX wireframes into functional WordPress sites.",
+          "Improved website traffic through SEO best practices and performance optimizations."
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Front-End Developer",
+        "date": "Jun 2018 - Aug 2018",
+        "company": "Lumino guru Technologies | Mohali",
+        "bullets": [
+          "Implemented responsive web designs using HTML5, CSS3, and JavaScript frameworks.",
+          "Worked closely with UX designers to ensure design feasibility and technical implementation.",
+          "Enhanced website accessibility and compliance with WCAG standards."
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Sr Web Designer",
+        "date": "Nov 2016 - Jun 2018",
+        "company": "Xtraxor Technologies | Mohali, India",
+        "bullets": []
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "title": "Bachelor's Degree, Arts",
+        "school": "EIILM University"
+      }
+    ],
+    "certifications": [
+      {
+        "id": 1,
+        "title": "Certification in Web Designing"
+      }
+    ],
+    "volunteering": [
+      {
+        "id": 1,
+        "title": "District Service Coordinator",
+        "organization": "Sri Sathya Sai Sewa Organisation, Sirhind",
+        "bullets": [
+          "Distribute milk daily to hospital patients",
+          "Organize and lead bi-monthly food donation drives",
+          "Actively participate in weekly Vedam chanting"
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Ecommerce Portal, Mak Furniture",
+      "tags": [
+        "WordPress",
+        "Responsive Design"
+      ],
+      "description": "Designed and developed a fully custom WordPress theme tailored to client branding. Optimized site speed and accessibility.",
+      "image": "https://via.placeholder.com/600x400?text=Mak+Furniture"
+    },
+    {
+      "id": 2,
+      "title": "WordPress E Commerce Portal, Matsya Luxury",
+      "tags": [
+        "UI/UX Redesign",
+        "E-commerce"
+      ],
+      "description": "Led the UI/UX redesign to improve navigation and checkout flow. Achieved a reduction in bounce rate and enhanced conversion rates.",
+      "image": "https://via.placeholder.com/600x400?text=Matsya+Luxury"
+    },
+    {
+      "id": 3,
+      "title": "Sikhville",
+      "tags": [
+        "HTML/CSS",
+        "React JS"
+      ],
+      "description": "Hands-on experience with HTML, CSS, JavaScript, and React JS, including the design and implementation of reusable UI components.",
+      "image": "https://via.placeholder.com/600x400?text=Sikhville"
+    }
+  ],
+  "contact": {
+    "email": "saibansal87@gmail.com",
+    "phone": "9781045376",
+    "location": "Sirhind, Punjab (Remote/Relocate)"
+  }
+}
