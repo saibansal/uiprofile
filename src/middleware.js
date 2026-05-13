@@ -1,8 +1,10 @@
 import { NextResponse } from 'next/server';
 
 export function middleware(request) {
-  const session = request.cookies.get('admin_session');
+  // Get token from environment variable
   const validToken = process.env.ADMIN_TOKEN;
+
+  const session = request.cookies.get('admin_session');
 
   const isAdminRoute = request.nextUrl.pathname.startsWith('/admin');
   const isPortfolioApi = request.nextUrl.pathname.startsWith('/api/portfolio') && request.method === 'POST';
