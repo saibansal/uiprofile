@@ -23,9 +23,9 @@ export async function POST(request) {
 
     fs.writeFileSync(filepath, buffer);
 
-    return NextResponse.json({ 
-      success: true, 
-      url: `/uploads/${filename}` 
+    return NextResponse.json({
+      success: true,
+      url: `/uploads/${filename}`
     });
   } catch (error) {
     console.error('Upload error:', error);
