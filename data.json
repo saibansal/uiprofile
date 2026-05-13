@@ -2,6 +2,10 @@
   "settings": {
     "logoName": "Vishal."
   },
+  "admin": {
+    "password": "vishaladmin",
+    "token": "super_secret_secure_token_12345"
+  },
   "hero": {
     "subtitle": "Hello, I am Vishal Bansal adsasd sdafasdf a",
     "titlePrefix": "Senior UI/UX",

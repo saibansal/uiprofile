@@ -1,10 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useRouter } from 'next/navigation';
 
 export default function AdminPanel() {
-  const router = useRouter();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
@@ -51,11 +49,7 @@ export default function AdminPanel() {
     });
   };
 
-  const handleLogout = async () => {
-    await fetch('/api/auth/logout', { method: 'POST' });
-    router.push('/login');
-    router.refresh();
-  };
+
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -171,14 +165,9 @@ export default function AdminPanel() {
     <div style={{ padding: '40px', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
       <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
         <h1>Portfolio Admin Panel</h1>
-        <div style={{display: 'flex', gap: '10px'}}>
-          <button onClick={handleSave} disabled={saving} style={{ padding: '10px 20px', background: 'blue', color: 'white', border: 'none', cursor: 'pointer', borderRadius: '4px' }}>
-            {saving ? 'Saving...' : 'Save All Changes'}
-          </button>
-          <button onClick={handleLogout} style={{ padding: '10px 20px', background: '#dc3545', color: 'white', border: 'none', cursor: 'pointer', borderRadius: '4px' }}>
-            Logout
-          </button>
-        </div>
+        <button onClick={handleSave} disabled={saving} style={{ padding: '10px 20px', background: 'blue', color: 'white', border: 'none', cursor: 'pointer', borderRadius: '4px' }}>
+          {saving ? 'Saving...' : 'Save All Changes'}
+        </button>
       </div>
 
       <div style={{ display: 'flex', borderBottom: '2px solid #007bff', marginBottom: '20px' }}>
