@@ -4,16 +4,38 @@ import { useState } from 'react';
 export default function Contact({ contact }) {
   const [status, setStatus] = useState('idle'); // idle, sending, success
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('sending');
-    setTimeout(() => {
-      setStatus('success');
-      e.target.reset();
-      setTimeout(() => {
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: e.target.name.value,
+          email: e.target.email.value,
+          message: e.target.message.value,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus('success');
+        e.target.reset();
+        setTimeout(() => {
+          setStatus('idle');
+        }, 3000);
+      } else {
         setStatus('idle');
-      }, 3000);
-    }, 1500);
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Submission error:', error);
+      setStatus('idle');
+      alert('An error occurred. Please try again later.');
+    }
   };
 
   return (
@@ -51,13 +73,13 @@ export default function Contact({ contact }) {
                 
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="form-group">
-                        <input type="text" id="name" placeholder="Your Name" required />
+                        <input type="text" id="name" name="name" placeholder="Your Name" required />
                     </div>
                     <div className="form-group">
-                        <input type="email" id="email" placeholder="Your Email" required />
+                        <input type="email" id="email" name="email" placeholder="Your Email" required />
                     </div>
                     <div className="form-group">
-                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" className={`btn w-100 ${status === 'success' ? 'btn-outline' : 'btn-primary'}`} style={{opacity: status === 'sending' ? 0.8 : 1}}>
                         {status === 'idle' && <>Send Message <i className="fas fa-paper-plane"></i></>}
